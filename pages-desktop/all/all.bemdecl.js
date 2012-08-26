@@ -12,7 +12,11 @@ exports.blocks = [
     { name: 'wells' },
     { name: 'component-animations' },
     { name: 'close' },
-    { name: 'buttons' },
+    { name: 'btn', mods: [
+        { name: 'type', vals: ['danger', 'info', 'inverse', 'link', 'primary', 'success', 'warning'] },
+        { name: 'size', vals: ['large', 'small', 'mini'] },
+        { name: 'block', vals: ['yes'] }
+    ]},
     { name: 'button-groups' },
     { name: 'alerts' },
     { name: 'navs' },

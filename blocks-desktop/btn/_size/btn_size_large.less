@@ -1,0 +1,21 @@
+.btn_size_large {
+  padding: 9px 14px;
+  font-size: @baseFontSize + 2px;
+  line-height: normal;
+  .border-radius(5px);
+}
+
+.btn_size_large [class^="icon-"] {
+  margin-top: 2px;
+}
+
+button.btn,
+input[type="submit"].btn {
+
+  // IE7 has some default padding on button controls
+  &.btn_size_large {
+    *padding-top: 7px;
+    *padding-bottom: 7px;
+  }
+
+}

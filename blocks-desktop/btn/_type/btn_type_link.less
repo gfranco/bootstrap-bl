@@ -1,0 +1,20 @@
+// Make a button look and behave like a link
+.btn_type_link,
+.btn_type_link:active {
+  background-color: transparent;
+  background-image: none;
+  .box-shadow(none);
+}
+
+.btn_type_link {
+  border-color: transparent;
+  cursor: pointer;
+  color: @linkColor;
+  .border-radius(0);
+}
+
+.btn_type_link:hover {
+  color: @linkColorHover;
+  text-decoration: underline;
+  background-color: transparent;
+}

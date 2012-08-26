@@ -1,0 +1,20 @@
+.btn_size_small {
+  padding: 3px 9px;
+  font-size: @baseFontSize - 2px;
+  line-height: @baseLineHeight - 2px;
+}
+
+.btn_size_small [class^="icon-"] {
+  margin-top: 0;
+}
+
+button.btn,
+input[type="submit"].btn {
+
+  // IE7 has some default padding on button controls
+  &.btn_size_small {
+    *padding-top: 3px;
+    *padding-bottom: 3px;
+  }
+
+}
