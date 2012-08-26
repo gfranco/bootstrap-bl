@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+
+ALL="pages-desktop/all"
+bem build -d $ALL/all.bemdecl.js -t deps.js -o $ALL -n all -l blocks-desktop
+bem build -d $ALL/all.deps.js -t less -o $ALL -n all -l blocks-desktop
+lessc $ALL/all.less > $ALL/all.css
