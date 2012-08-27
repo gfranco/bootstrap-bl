@@ -29,7 +29,14 @@ exports.blocks = [
     { name: 'popovers' },
     { name: 'thumbnails' },
     { name: 'labels-badges' },
-    { name: 'progress-bars' },
+    { name: 'progress', mods: [
+        { name: 'active', vals: ['yes'] },
+        { name: 'danger', vals: ['yes'] },
+        { name: 'info', vals: ['yes'] },
+        { name: 'striped', vals: ['yes'] },
+        { name: 'success', vals: ['yes'] },
+        { name: 'warning', vals: ['yes'] },
+    ]},
     { name: 'accordion' },
     { name: 'carousel' },
     { name: 'hero-unit' }
