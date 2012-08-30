@@ -1,0 +1,27 @@
+.btn-group_vertical_yes {
+  display: inline-block; // makes buttons only take up the width they need
+  .ie7-inline-block();
+}
+
+.btn-group_vertical_yes .btn {
+  display: block;
+  float: none;
+  width: 100%;
+  .border-radius(0);
+}
+.btn-group_vertical_yes .btn + .btn {
+  margin-left: 0;
+  margin-top: -1px;
+}
+.btn-group_vertical_yes .btn:first-child {
+  .border-radius(4px 4px 0 0);
+}
+.btn-group_vertical_yes .btn:last-child {
+  .border-radius(0 0 4px 4px);
+}
+.btn-group_vertical_yes .btn_size_large:first-child {
+  .border-radius(6px 6px 0 0);
+}
+.btn-group_vertical_yes .btn_size_large:last-child {
+  .border-radius(0 0 6px 6px);
+}

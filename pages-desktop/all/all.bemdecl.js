@@ -17,7 +17,7 @@ exports.blocks = [
         { name: 'size', vals: ['large', 'small', 'mini'] },
         { name: 'block', vals: ['yes'] }
     ]},
-    { name: 'button-groups' },
+    { name: 'btn-group', mods: [{ name: 'vertical', vals:['yes'] }] },
     { name: 'alerts' },
     { name: 'navs' },
     { name: 'navbar' },
