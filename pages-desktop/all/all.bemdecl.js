@@ -31,7 +31,10 @@ exports.blocks = [
         { name: 'block', vals: ['yes'] }
     ]},
     { name: 'btn-group', mods: [{ name: 'vertical', vals:['yes'] }] },
-    { name: 'alerts' },
+    { name: 'alert', mods: [
+        { name: 'type', vals: ['danger', 'error', 'info', 'success'] },
+        { name: 'block', vals: ['yes'] }
+    ]},
     { name: 'navs' },
     { name: 'navbar' },
     { name: 'breadcrumbs' },
