@@ -44,6 +44,7 @@ exports.blocks = [
     { name: 'tooltip' },
     { name: 'popovers' },
     { name: 'thumbnails' },
+    { name: 'thumbnail' },
     { name: 'labels-badges' },
     { name: 'progress', mods: [
         { name: 'active', vals: ['yes'] },
