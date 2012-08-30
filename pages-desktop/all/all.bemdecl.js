@@ -1,6 +1,9 @@
 exports.blocks = [
     { name: 'i-global' },
     { name: 'scaffolding' },
+    { name: 'img', mods: [
+        { name: 'type', vals: ['rounded', 'circle', 'polaroid'] }
+    ]},
     { name: 'grid' },
     { name: 'layout' },
     { name: 'type' },
