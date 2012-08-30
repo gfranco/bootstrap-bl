@@ -38,7 +38,9 @@ exports.blocks = [
     { name: 'navs' },
     { name: 'navbar' },
     { name: 'breadcrumbs' },
-    { name: 'pagination' },
+    { name: 'pagination', mods: [
+        { name: 'align', vals: ['center', 'right'] }
+    ]},
     { name: 'pager' },
     { name: 'modals' },
     { name: 'tooltip' },

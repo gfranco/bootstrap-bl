@@ -1,37 +1,45 @@
-//
-// Pager pagination
-// --------------------------------------------------
+.pager
+{
+    margin: @baseLineHeight 0;
+    list-style: none;
+    text-align: center;
+    .clearfix();
+}
 
+.pager__item
+{
+    display: inline;
+}
 
-.pager {
-  margin: @baseLineHeight 0;
-  list-style: none;
-  text-align: center;
-  .clearfix();
+.pager__link
+{
+    display: inline-block;
+    padding: 5px 14px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    .border-radius(15px);
 }
-.pager li {
-  display: inline;
+
+.pager__link:hover
+{
+    text-decoration: none;
+    background-color: #f5f5f5;
 }
-.pager a {
-  display: inline-block;
-  padding: 5px 14px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  .border-radius(15px);
+
+.pager__item_type_previous .pager__link
+{
+    float: left;
 }
-.pager a:hover {
-  text-decoration: none;
-  background-color: #f5f5f5;
+
+.pager__item_type_next .pager__link
+{
+    float: right;
 }
-.pager .next a {
-  float: right;
-}
-.pager .previous a {
-  float: left;
-}
-.pager .disabled a,
-.pager .disabled a:hover {
-  color: @grayLight;
-  background-color: #fff;
-  cursor: default;
+
+.pager .disabled .pager__link,
+.pager .disabled .pager__link:hover
+{
+    color: @grayLight;
+    background-color: #fff;
+    cursor: default;
 }
