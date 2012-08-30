@@ -12,7 +12,12 @@ exports.blocks = [
         { name: 'scrollable', vals: ['yes'] }
     ]},
     { name: 'form' },
-    { name: 'table' },
+    { name: 'table', mods: [
+        { name: 'bordered', vals: ['yes'] },
+        { name: 'condensed', vals: ['yes'] },
+        { name: 'hovered', vals: ['yes'] },
+        { name: 'striped', vals: ['yes'] }
+    ]},
     { name: 'sprites' },
     { name: 'dropdowns' },
     { name: 'wells' },
