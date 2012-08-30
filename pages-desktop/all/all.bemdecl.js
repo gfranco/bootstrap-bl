@@ -7,7 +7,10 @@ exports.blocks = [
     { name: 'grid' },
     { name: 'layout' },
     { name: 'type' },
-    { name: 'code' },
+    { name: 'code', mods: [
+        { name: 'type', vals: ['inline', 'block'] },
+        { name: 'scrollable', vals: ['yes'] }
+    ]},
     { name: 'form' },
     { name: 'table' },
     { name: 'sprites' },
