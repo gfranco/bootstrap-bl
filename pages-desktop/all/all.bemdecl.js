@@ -20,7 +20,9 @@ exports.blocks = [
     ]},
     { name: 'sprites' },
     { name: 'dropdowns' },
-    { name: 'wells' },
+    { name: 'well', mods: [
+        { name: 'size', vals: ['large', 'small'] }
+    ]},
     { name: 'component-animations' },
     { name: 'close' },
     { name: 'btn', mods: [
