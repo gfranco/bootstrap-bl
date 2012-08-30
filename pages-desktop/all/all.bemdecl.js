@@ -45,7 +45,10 @@ exports.blocks = [
     { name: 'popovers' },
     { name: 'thumbnails' },
     { name: 'thumbnail' },
-    { name: 'labels-badges' },
+    { name: 'label', mods: [
+        { name: 'badge', vals: ['yes'] },
+        { name: 'type', vals: ['important', 'info', 'inverse', 'success', 'warning'] }
+    ]},
     { name: 'progress', mods: [
         { name: 'active', vals: ['yes'] },
         { name: 'danger', vals: ['yes'] },
