@@ -1,0 +1,6 @@
+({
+    shouldDeps: [
+        'i-global',
+        'type'
+    ]
+})
