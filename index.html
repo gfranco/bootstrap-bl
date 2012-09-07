@@ -1,2 +1,109 @@
 <!doctype html>
-<meta http-equiv="refresh" content="0;URL='pages/index'">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>bootstrap-bl</title>
+        <link rel="stylesheet" href="/pages/assets/assets.css" type="text/css">
+        <link rel="stylesheet" href="/pages/assets/google-code-prettify/prettify.css" type="text/css">
+    </head>
+    <body class="b-page b-page__body">
+        <div class="b-head">
+            <div class="b-grid">
+                <h1>bootstrap-bl</h1>
+                <p>Тот же Бутстрап — только лучше!</p>
+            </div>
+        </div>
+        <div class="b-grid">
+            <section class="b-section" id="introduction">
+                <p class="lead">bootstrap-bl — это попытка реализовать оригинальный Бутстрап, в БЭМ методологии, получив таким образом не только настоящую модульность но и все прелести АНБ.</p>
+                <h4>Легенда</h4>
+                <p>
+                    <span class="label label_type_success">tech</span>&#160;—&#160;Рефакторинг технологии завершён
+                </p>
+                <p>
+                    <span class="label label_type_warning">tech</span>&#160;—&#160;Ведутся работы
+                </p>
+                <p>
+                    <span class="label label_type_important">tech</span>&#160;—&#160;Рефакторинг даже не начинался
+                </p>
+            </section>
+            <section class="b-section">
+                <h2>Кнопки</h2>
+                <div class="b-example">
+                    <button class="btn btn_type_success btn_size_large">Button</button>
+                    <button class="btn btn_type_primary">Button</button>
+                    <button class="btn btn_type_warning btn_size_small">Button</button>
+                </div>
+                <pre class="code code_type_block prettyprint linenums">
+([
+    {
+        block: 'btn',
+        mods: { type: 'success', size: 'large' },
+        content: 'Button'
+    },
+    {
+        block: 'btn',
+        mods: { type: 'primary' },
+        content: 'Button'
+    },
+    {
+        block: 'btn',
+        mods: { type: 'warning', size: 'small' },
+        content: 'Button'
+    }
+])</pre>
+                <span class="label label_type_success">css</span>
+                <span class="label label_type_success">bemhtml</span>
+            </section>
+            <section class="b-section">
+                <h2>Таблицы</h2>
+                <div class="b-example">
+                    <table class="table table_bordered_yes table_striped_yes">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Username</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Larry the bird</td>
+                            <td></td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div>
+                <pre class="code code_type_block prettyprint linenums">
+({
+    block: 'table',
+    mods: { bordered: 'yes', striped: 'yes' }
+})</pre>
+                <span class="label label_type_success">css</span>
+                <span class="label label_type_success">bemhtml</span>
+            </section>
+        </div>
+        <script src="/pages/assets/google-code-prettify/prettify.js"></script>
+        <script>
+            (function() {
+                window.prettyPrint && prettyPrint()
+            })()
+        </script>
+    </body>
+</html>
+

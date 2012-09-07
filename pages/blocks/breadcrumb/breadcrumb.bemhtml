@@ -1,0 +1,28 @@
+block breadcrumb {
+
+    tag: 'ul',
+
+    elem item {
+        tag: 'li',
+        content: [
+            this.ctx.content,
+            ' ',
+            {
+                elem: 'divider'
+            }
+        ]
+    }
+
+    elem item, elemMod active yes, content: this.ctx.content
+
+    elem link {
+        tag: 'a',
+        attrs: { href: this.ctx.url }
+    }
+
+    elem divider {
+        tag: 'span',
+        content: '/'
+    }
+
+}

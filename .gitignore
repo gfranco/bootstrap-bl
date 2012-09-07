@@ -1,4 +1,9 @@
 node_modules
 bem-bl
-pages/index/*.js
-pages/index/*.less
+.bem/snapshots
+pages/assets/*.deps.js
+pages/assets/*.meta.js
+pages/assets/*assets.js
+pages/assets/*.bemdecl.js
+pages/assets/*.bemhtml.js
+pages/assets/*.less

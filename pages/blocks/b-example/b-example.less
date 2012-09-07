@@ -1,0 +1,100 @@
+.b-example
+{
+  position: relative;
+  margin: 15px 0;
+  padding: 39px 19px 14px;
+  *padding-top: 19px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.b-example:after
+{
+  content: "Пример";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  color: #9da0a4;
+  -webkit-border-radius: 4px 0 4px 0;
+     -moz-border-radius: 4px 0 4px 0;
+          border-radius: 4px 0 4px 0;
+}
+
+.b-example + .prettyprint
+{
+  margin-top: -20px;
+  padding-top: 15px;
+}
+
+.b-example > p:last-child
+{
+  margin-bottom: 0;
+}
+
+.b-example .table,
+.b-example .progress,
+.b-example .well,
+.b-example .alert,
+.b-example .hero-unit,
+.b-example .pagination,
+.b-example .navbar,
+.b-example > .nav,
+.b-example blockquote
+{
+  margin-bottom: 5px;
+}
+
+.b-example .pagination
+{
+  margin-top: 0;
+}
+
+.bs-navbar-top-example,
+.bs-navbar-bottom-example
+{
+  z-index: 1;
+  padding: 0;
+  height: 90px;
+  overflow: hidden; /* cut the drop shadows off */
+}
+
+.bs-navbar-top-example .navbar-fixed-top,
+.bs-navbar-bottom-example .navbar-fixed-bottom
+{
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.bs-navbar-top-example
+{
+  -webkit-border-radius: 0 0 4px 4px;
+     -moz-border-radius: 0 0 4px 4px;
+          border-radius: 0 0 4px 4px;
+}
+
+.bs-navbar-top-example:after {
+  top: auto;
+  bottom: -1px;
+  -webkit-border-radius: 0 4px 0 4px;
+     -moz-border-radius: 0 4px 0 4px;
+          border-radius: 0 4px 0 4px;
+}
+.bs-navbar-bottom-example {
+  -webkit-border-radius: 4px 4px 0 0;
+     -moz-border-radius: 4px 4px 0 0;
+          border-radius: 4px 4px 0 0;
+}
+.bs-navbar-bottom-example .navbar {
+  margin-bottom: 0;
+}
+form.b-example {
+  padding-bottom: 19px;
+}
