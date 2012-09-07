@@ -2,6 +2,7 @@
     shouldDeps: [
         'reset',
         'variables',
-        'mixins'
+        'mixins',
+        'scaffolding'
     ]
 })
