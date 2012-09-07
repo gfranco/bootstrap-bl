@@ -7,10 +7,6 @@ MAKE.decl('Arch', {
                 type: 'git',
                 url: 'git://github.com/bem/bem-bl.git',
                 treeish: '0.2'
-            },
-            'bootstrap-bl': {
-                type: 'git',
-                url: 'git://github.com/gfranco/bootstrap-bl.git'
             }
         };
 
