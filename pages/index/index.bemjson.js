@@ -2,8 +2,8 @@
     block: 'b-page',
     title: 'Say hello to Bootstrap',
     head: [
-        { elem: 'css', url: '/pages-desktop/index/index.css' },
-        { elem: 'css', url: '/pages-desktop/docs.css' }
+        { elem: 'css', url: '/pages/index/index.css' },
+        { elem: 'css', url: '/pages/docs.css' }
     ],
     content: [
         {

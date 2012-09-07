@@ -1,2 +1,4 @@
 node_modules
 bem-bl
+pages/index/*.js
+pages/index/*.less
