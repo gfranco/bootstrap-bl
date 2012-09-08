@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <title>bootstrap-bl</title>
-        <link rel="stylesheet" href="/bootstrap-bl/pages/assets/assets.css" type="text/css">
-        <link rel="stylesheet" href="/bootstrap-bl/pages/assets/google-code-prettify/prettify.css" type="text/css">
+        <link rel="stylesheet" href="pages/assets/assets.css" type="text/css">
+        <link rel="stylesheet" href="pages/assets/google-code-prettify/prettify.css" type="text/css">
     </head>
     <body class="b-page b-page__body">
         <div class="b-head">
@@ -97,8 +97,186 @@
                 <span class="label label_type_success">css</span>
                 <span class="label label_type_success">bemhtml</span>
             </section>
+            <section class="b-section">
+                <h2>Хлебные крошки</h2>
+                <div class="b-example">
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb__item">
+                            <a href="#" class="breadcrumb__link">Home</a>
+                            <span class="breadcrumb__divider">/</span>
+                        </li>
+                        <li class="breadcrumb__item">
+                            <a href="#" class="breadcrumb__link">Library</a>
+                            <span class="breadcrumb__divider">/</span>
+                        </li>
+                        <li class="breadcrumb__item breadcrumb__item_active_yes">
+                            Data
+                        </li>
+                    </ul>
+                </div>
+                <pre class="code code_type_block prettyprint linenums">
+({
+    block: 'breadcrumb',
+    content: [
+        {
+            elem: 'item',
+            content: {
+                elem: 'link',
+                url: '#',
+                content: 'Home'
+            }
+        },
+        {
+            elem: 'item',
+            content: {
+                elem: 'link',
+                url: '#',
+                content: 'Library'
+            }
+        },
+        {
+            elem: 'item',
+            elemMods: { active: 'yes' },
+            content: 'Data'
+        },
+    ]
+})</pre>
+                <span class="label label_type_success">css</span>
+                <span class="label label_type_success">bemhtml</span>
+            </section>
+            <section class="b-section">
+                <h2>Pagination</h2>
+                <div class="b-example">
+                    <div class="pagination">
+                        <ul>
+                            <li><a href="#">Prev</a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">Next</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <pre class="code code_type_block prettyprint linenums">
+({
+    block: 'pagination',
+    content: [
+        {
+            elem: 'item',
+            content: {
+                elem: 'link',
+                url: '#',
+                content: 'Prev'
+            }
+        },
+        {
+            elem: 'item',
+            content: {
+                elem: 'link',
+                url: '#',
+                content: '1'
+            }
+        },
+        ...
+        {
+            elem: 'item',
+            content: {
+                elem: 'link',
+                url: '#',
+                content: 'Next'
+            }
+        }
+    ]
+})</pre>
+                <span class="label label_type_warning">css</span>
+                <span class="label label_type_important">bemhtml</span>
+            </section>
+            <section class="b-section">
+                <h2>Pager</h2>
+                <div class="b-example">
+                    <ul class="pager">
+                        <li class="pager__item">
+                            <a href="#" class="pager__link">Previous</a>
+                        </li>
+                        <li class="pager__item">
+                            <a href="#" class="pager__link">Next</a>
+                        </li>
+                    </ul>
+                </div>
+                <pre class="code code_type_block prettyprint linenums">
+({
+    block: 'pager',
+    content: [
+        {
+            elem: 'item',
+            content: {
+                elem: 'link',
+                url: '#',
+                content: 'Previous'
+            }
+        },
+        {
+            elem: 'item',
+            content: {
+                elem: 'link',
+                url: '#',
+                content: 'Next'
+            }
+        }
+    ]
+})</pre>
+                <span class="label label_type_success">css</span>
+                <span class="label label_type_success">bemhtml</span>
+            </section>
+            <section class="b-section">
+                <h2>Alerts</h2>
+                <div class="alert">
+                    <button type="button" class="close" data-dismiss="alert">×</button>
+                    <strong>Warning!</strong> Best check yo self, you're not looking too good.
+                </div>
+                <pre class="code code_type_block prettyprint linenums">
+({
+    block: 'alert',
+    closable: true,
+    content: '&lt;strong&gt;Warning!&lt;/strong&gt; Best check yo self, you\'re not looking too good.'
+})</pre>
+                <span class="label label_type_success">css</span>
+                <span class="label label_type_warning">bemhtml</span>
+            </section>
+            <section class="b-section">
+                <h2>Progress bars</h2>
+                <div class="progress progress_striped_yes progress_active_yes">
+                    <div class="progress__bar" style="width: 80%"></div>
+                </div>
+                <div class="progress">
+                    <div class="progress__bar progress__bar_success_yes" style="width: 35%"></div>
+                    <div class="progress__bar progress__bar_warning_yes" style="width: 20%"></div>
+                    <div class="progress__bar progress__bar_danger_yes" style="width: 10%"></div>
+                </div>
+                <pre class="code code_type_block prettyprint linenums">
+([
+    {
+        block: 'progress',
+        mods: { striped: 'yes', active: 'yes' },
+        content: {
+            elem: 'bar',
+            width: 80
+        }
+    },
+    {
+        block: 'progress',
+        content: [
+            { elem: 'bar', elemMods: { type: 'success' }, width: 35 },
+            { elem: 'bar', elemMods: { type: 'warning' }, width: 20 },
+            { elem: 'bar', elemMods: { type: 'danger' }, width: 10 },
+        ]
+    }
+])</pre>
+                <span class="label label_type_warning">css</span>
+                <span class="label label_type_success">bemhtml</span>
+            </section>
         </div>
-        <script src="/pages/assets/google-code-prettify/prettify.js"></script>
+        <script src="pages/assets/google-code-prettify/prettify.js"></script>
         <script>
             (function() {
                 window.prettyPrint && prettyPrint()

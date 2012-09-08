@@ -45,6 +45,37 @@
         {
             block: 'code',
             mods: { type: 'block' }
+        },
+        {
+            block: 'breadcrumb'
+        },
+        {
+            block: 'pagination'
+        },
+        {
+            block: 'pager'
+        },
+        {
+            block: 'alert'
+        },
+        {
+            block: 'close'
+        },
+        {
+            block: 'progress',
+            mods: { striped: 'yes', active: 'yes' }
+        },
+        {
+            block: 'progress',
+            mods: { success: 'yes' }
+        },
+        {
+            block: 'progress',
+            mods: { warning: 'yes' }
+        },
+        {
+            block: 'progress',
+            mods: { danger: 'yes' }
         }
     ]
 })
