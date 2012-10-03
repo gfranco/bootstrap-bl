@@ -76,6 +76,9 @@
         {
             block: 'progress',
             mods: { danger: 'yes' }
+        },
+        {
+            block: 'b-nobr'
         }
     ]
 })
