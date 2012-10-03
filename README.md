@@ -1,18 +1,5 @@
-Тот же бутстрап, только лучше!
+##It's the Bootstrap, but better!
+
+bootstrap-bl — half-assed attempt to implement original bootstrap using BEM methodology, modularity and stuff.
 
 http://gfranco.github.com/bootstrap-bl
-
-```
-TODO:
-  * Base CSS
-    * Forms
-    * Icons
-  * Components
-    * Dropdowns
-    * Button groups
-    * Button dropdown menus
-    * Navs
-    * Navbar
-    * Misc
-  * JavaScript — all
-```
