@@ -899,7 +899,7 @@ input[type="submit"].btn.btn_size_small {
   border-radius: 4px;
 }
 .b-example:after {
-  content: "Пример";
+  content: "Example";
   position: absolute;
   top: -1px;
   left: -1px;
